@@ -1,0 +1,63 @@
+name: Entry Form
+description: 4K CPU Challenge Entry Form
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the form below.
+  - type: input
+    id: cpu_name
+    attributes:
+      label: CPU Name
+      description: The name of the CPU
+    validations:
+      required: true
+  - type: input
+    id: source_code_bytes
+    attributes:
+      label: Source Code Bytes
+      description: Size of the CPU core source code, including ALU and register file (in bytes; 4 KB or less)
+    validations:
+      required: true
+  - type: input
+    id: mips
+    attributes:
+      label: MIPS
+      description: Maximum Mega Instruction Per Second
+    validations:
+      required: true
+  - type: input
+    id: fmax
+    attributes:
+      label: fMax
+      description: Maximum clock frequency
+    validations:
+      required: true
+  - type: input
+    id: circuit_size
+    attributes:
+      label: Circuit Size
+      description: Logic cells, LEs, LUTs, CLBs, ALMs
+    validations:
+      required: true
+  - type: input
+    id: project_url
+    attributes:
+      label: Project URL
+      description: The URL of the project
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: The type of Open Source Licenses
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Author name
+    validations:
+      required: true
