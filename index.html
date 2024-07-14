@@ -1,5 +1,90 @@
-<html>
-  <body>
-    <h1>4K CPU Challenge</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<title>4K CPU Challenge</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" media="(orientation: portrait)" href="mobile.css">
+<link rel="stylesheet" type="text/css" media="(orientation: landscape)" href="pc.css">
+</head>
+<body>
+
+<div class="grid_title">
+<div class="title1"></div>
+<div class="title2"></div>
+<div class="title3"></div>
+<div class="title4"></div>
+<div class="title5"></div>
+</div>
+
+
+<div class="margin">
+<div class="container">
+
+<h1>CPU Design Competition "4K CPU Challenge"</h1>
+
+<h4>About 4K CPU Challenge</h4>
+
+<p>The 4K CPU Challenge is an open source CPU design competition.</p>
+
+<p>Participants compete to see how far they can go in designing a practical CPU with less than 4KB of source code.</p>
+
+<p>The duration of the competition is indefinite, and anyone can enter for free at any time.</p>
+
+<h4>Purpose of the competition</h4>
+
+<p>The purpose of this competition is to allow a large number of CPU developers to compete for the best CPU designs and to share their ideas and techniques with each other and with society as a whole by publishing the results as open source, thereby creating the ground for future CPU excellence.</p>
+
+<h4>Competition entry eequirements</h4>
+
+<p>Upload the source code of your own CPU design or open source ISA CPU (e.g. RISC-V) to your repository on GitHub and notify its URL in Issues.</p>
+
+<ul>
+<li>Please keep the total bytes of the CPU core source code within 4KB.</li>
+<li>Please write the CPU in a language such as HDL, HLS, DSL, etc. that can be implemented in hardware by FPGA synthesis tools or EDA tools.</li>
+</ul>
+
+<p>The CPU core here is assumed to include the following functions at a minimum. However, it is not necessary to have them as hardware functions if they can be realized on the software side.</p>
+
+<ul>
+<li>Function to execute arbitrary programs</li>
+<li>Ability to perform numerical operations, bit operations, shift operations, and numerical comparisons</li>
+<li>Must support control structures (loops, jumps, calls, returns, conditional branches)</li>
+<li>ALU and register files should be included in the CPU core source code.</li>
+<li>Instruction memory, data memory, bus and device I/O source code need not be included in the CPU core (4KB). (However, please submit the source code for the entire executable project.)</li>
+<li>Minifying the CPU core source code (shortening variable names, etc.) in order to keep it within 4KB is acceptable. If you minify the source code, please also submit the original source code before minifying.</li>
+<li>You must check the operation on at least one type of FPGA board and prepare a project file.</li>
+<li>Prepare a simulator testbench project so that anyone can test it.</li>
+<li>Prepare a software development environment with at least assembler support so that anyone can program.</li>
+</ul>
+
+
+<h4>Competition evaluation axis</h4>
+
+<p>We do not plan to award prizes at this time, but in the future we will consider ranking and presenting awards based on the following evaluation axes.</p>
+
+<ul>
+<li>High speed of actual program execution (Integer Operations/sec, etc.)</li>
+<li>Small circuit size (LUTs, etc.) when implemented</li>
+<li>Short source code</li>
+<li>High maximum operating frequency (fMax)</li>
+</ul>
+
+<h4>Currently entered projects</h4>
+
+<p>(Recent entry first)</p>
+
+<div class="scrollbox">
+<table class="table1" width="100%">
+<tr><th>CPU name</th><th>Source code bytes</th><th>MIPS</th><th>fMax (MHz)</th><th>Circuit size</th><th>Project URL</th><th>License</th><th>Author</th></tr>
+<tr><td>Mini16SC-CPU</td><td>2794 (Minified)</td><td>400</td><td>400</td><td>109 CLB (with UART)</td><td><a href="https://github.com/miya4649/mini16sc_cpu">https://github.com/miya4649/mini16sc_cpu</a></td><td>BSD-2-Clause</td><td>miya</td></tr>
+</table>
+<br>
+
+</div><!-- .container -->
+</div><!-- .margin -->
+<div id="footer1"></div>
+<div id="footer2">&copy;2024, 4K CPU Challenge</div>
+</body>
 </html>

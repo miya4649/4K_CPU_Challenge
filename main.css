@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* (C)4K CPU Challenge, All rights reserved. */
+
+body {
+margin: 0;
+padding: 0;
+font-size: 1rem;
+color: #ffffff;
+background-color: #003300;
+}
+
+canvas {
+vertical-align: bottom;
+}
+
+a:hover {
+color: #ff66ff;
+}
+
+a {
+color: #66ffff;
+}
+
+hr {
+height: 2px;
+border: 0 solid #999999;
+border-bottom-width: 1px;
+}
+
+li {
+margin-bottom: 0.5rem;
+}
+
+span.comment {
+font-size: 0.8rem;
+color: #007f00;
+}
+
+span.c1 {
+color: #336699;
+}
+
+span.notes {
+font-weight: bold;
+color: #cc6600;
+}
+
+h2 {
+font-size: 1.5rem;
+color: #ffffff;
+border-bottom: 1px solid #ffeea8;
+}
+
+h3 {
+font-size: 1.33rem;
+color: #ffffff;
+border-bottom: 1px solid #ffeea8;
+}
+
+h4 {
+font-size: 1.17rem;
+color: #ffffff;
+border-left: 0.5rem solid #ffeea8;
+padding-left: 0.42rem;
+}
+
+h5 {
+font-size: 1.17rem;
+color: #ffffff;
+border-left: 0.375rem solid #ffeea8;
+padding-left: 0.42rem;
+margin-top: 1.17rem;
+margin-bottom: 1.17rem;
+}
+
+h6 {
+font-size: 1rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+div#footer1 {
+position: relative;
+padding: 0;
+margin: 0;
+background-color: #003300;
+background-image: url(footer.png);
+background-repeat: repeat-x;
+height: 18px;
+}
+
+div#footer2 {
+position: relative;
+padding: 2px 16px 2px 16px;
+margin: 0;
+color: #ffffff;
+background-color: #003300;
+text-align: center;
+}
+
+div.scrollbox {
+overflow: auto;
+}
+
+table.table1 {
+border: 1px solid #ffffff;
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+table.table1 th {
+padding: 0.5rem;
+border: 1px solid #ffffff;
+background: #000000;
+font-weight: bold;
+text-align: center;
+}
+
+table.table1 td {
+padding: 0.5rem;
+border: 1px solid #999999;
+text-align: left;
+vertical-align: top;
+}
+
+table.table1 td.center {
+padding: 0.5rem;
+border: 1px solid #ffffff;
+text-align: center;
+vertical-align: top;
+}
+
+.grid_title {
+display: grid;
+grid-template-columns: 576px 1fr 88px 1fr 48px;
+grid-template-rows: 112px;
+}
+
+div.title1 {
+background-image: url("title1.png");
+}
+
+div.title2 {
+background-image: url("title2.png");
+}
+
+div.title3 {
+background-image: url("title3.png");
+}
+
+div.title4 {
+background-image: url("title4.png");
+}
+
+div.title5 {
+background-image: url("title5.png");
+}
+
